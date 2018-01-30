@@ -55,6 +55,25 @@ myFullName('Jade', 'Fang');
 - It's how you set an instance variable so that it can be used everywhere else
 - equivalent in Ruby would be setting using @ */
 
+class Person{
+  constructor(first, last){
+  this.first = first;
+  this.last = last;
+}
+
+setName(d, e){
+  this.first = d;
+  this.last = e;
+}
+
+fullName() {
+  return this.first + " " + this.last;
+}
+
+var bob = new Person("Thomas", "Ochman");
+bob.fullName();
+}
+
 /* Javascript Array exercise */
 //Array.find
 let numArray = [2, 4, 6, 8];
